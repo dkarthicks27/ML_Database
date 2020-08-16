@@ -5,6 +5,8 @@ def binary_search(array, item):
     iteration = 0
     while not found:
         iteration += 1
+        if minimum > maximum:
+            return -1, iteration
         avg = round((maximum + minimum)/2)
         if array[avg] == item:
             return avg, iteration
@@ -27,8 +29,16 @@ if __name__ == '__main__':
     # we pass it a sorted array and a value to be found it will return us the index of that element
     # All the elements in the array are unique and no duplicate values are there
     primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-    result, loops = binary_search(primes, 67)
-    print(f'{loops} iteration were needed to find {primes[result]} whose index is {result}')
-    result = linear_search(primes, 67)
-    print(f'{result} iteration were required to find {primes[result]} whose index is {result}')
+    print(primes)
+    query = input("Enter a number to search in the primes array: ")
+    result, loops = binary_search(primes, int(query))
+    if result == -1:
+        print('Please enter a valid number which can be found in array')
+    else:
+        print(f'{loops} iteration were needed to find {primes[result]} whose index is {result}')
+    result = linear_search(primes, int(query))
+    if result is None:
+        print(result)
+    else:
+        print(f'{result} iteration were required to find {primes[result]} whose index is {result}')
     pass
