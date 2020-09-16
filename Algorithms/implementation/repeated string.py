@@ -11,3 +11,5 @@ print('remaining string: ', new)
 
 total = len(re.findall('a', s)) * reps + len(re.findall('a', new))
 print('total: ', total)
+
+
