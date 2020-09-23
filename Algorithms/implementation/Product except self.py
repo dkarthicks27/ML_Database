@@ -1,7 +1,5 @@
 inp = [1, 2, 3, 4]
 
-
-
 # output [24, 12, 8, 6]
 
 
@@ -11,15 +9,28 @@ inp = [1, 2, 3, 4]
 
 
 #
+# method 1
+# product = []
+#
+# for i in range(len(inp)):
+#     prod = 1
+#     for j in range(len(inp)):
+#         if i != j:
+#             prod *= inp[j]
+#     product.append(prod)
+#
+# print(product)
+
+# method 2
+# finding the product of all elements
+# and divinding by each element
+
+prod = 1
+for i in inp:
+    prod *= i
 
 product = []
-
-for i in range(len(inp)):
-    prod = 1
-    for j in range(len(inp)):
-        if i != j:
-            prod *= inp[j]
-    product.append(prod)
-
+for i in inp:
+    product.append(prod // i)
 
 print(product)
