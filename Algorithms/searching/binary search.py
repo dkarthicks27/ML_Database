@@ -34,7 +34,7 @@ if __name__ == '__main__':
     #     print('Please enter a valid number which can be found in array')
     # else:
     #     print(f'{loops} iteration were needed to find {primes[result]} whose index is {result}')
-    # result = linear_search(primes, int(query))
+    # resinsult = linear_search(primes, int(query))
     # if result is None:
     #     print(result)
     # else:
