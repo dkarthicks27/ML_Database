@@ -1,3 +1,6 @@
 # ML_Database
-This repostiory is contributed to gensim, what are the things I understood in gensim.
-We have explained with various use cases the significance of gensim in ML
+
+Welcome to ML Database, this repository entails everything from Machine Learning to Algorithms and Data Structures
+
+I regularly participate in codeforces Hackathons and other similar ones, and all those are added too for reference
+
