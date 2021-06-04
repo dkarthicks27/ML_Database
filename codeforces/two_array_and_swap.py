@@ -18,6 +18,18 @@ def solve(a, b, k):
 
 
 
+def solve2(a, b, k):
+    a.sort()
+    b.sort(reverse=True)
+    tot = 0
+    for i in range(len(a)):
+        if i < k:
+            tot += max(a[i], b[i])
+        else:
+            tot += a[i]
+
+    print(tot)
+
 
 if __name__ == '__main__':
     t = int(input())
@@ -26,4 +38,4 @@ if __name__ == '__main__':
         n, k_ = list(map(int, input().split()))
         a_ = list(map(int, input().split()))
         b_ = list(map(int, input().split()))
-        solve(a_, b_, k_)
+        solve2(a_, b_, k_)
