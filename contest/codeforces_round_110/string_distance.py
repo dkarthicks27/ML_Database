@@ -3,7 +3,7 @@ def f(a, b):
     if set([i for i in a]) != set([i for i in b]):
         operations += 1337
     else:
-        
+
     return operations
 
 
