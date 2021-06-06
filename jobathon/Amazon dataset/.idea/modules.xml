@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Amazon dataset.iml" filepath="$PROJECT_DIR$/.idea/Amazon dataset.iml" />
+      <module fileurl="file://$USER_HOME$/Python projects/ML_Database/jobathon/jobathon_analytics_vidhya/.idea/jobathon_analytics_vidhya.iml" filepath="$USER_HOME$/Python projects/ML_Database/jobathon/jobathon_analytics_vidhya/.idea/jobathon_analytics_vidhya.iml" />
+    </modules>
+  </component>
+</project>
