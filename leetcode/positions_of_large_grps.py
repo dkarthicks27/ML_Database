@@ -1,19 +1,24 @@
 import re
 from itertools import repeat
 
+def take(elem):
+    return elem[0]
+
 
 def largeGroupPositions(s):
-    k = set(s)
+    pattern = rf'\w{{3,}}'
     un = []
-    for i in k:
-        pattern = rf'{i}{{3,}}'
-        x = re.search(pattern, s)
-        if x:
-            un.append([x.start(), x.end() - 1])
+    x = re.finditer(pattern, s)
+    if x:
+        for m in x:
+            print(m)
+            un.append([m.start(), m.end() - 1])
+        # un.append([x.start(), x.end() - 1])
 
+    un.sort()
     print(un)
 
 
 if __name__ == '__main__':
-    inp = "abbxxxxzzy"
+    inp = "nnnhaaannnm"
     largeGroupPositions(inp)
