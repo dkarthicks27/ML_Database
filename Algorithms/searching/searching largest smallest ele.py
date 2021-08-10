@@ -7,7 +7,7 @@ def binarySearch(arr, q):
     ans = -1
     while start <= end:
         # print((start, end))
-        mid = (start + end)//2
+        mid = (start + end) // 2
         # print(mid)
         if arr[mid] < q:
             ans = mid
@@ -20,13 +20,11 @@ def binarySearch(arr, q):
         return None
 
 
-
 arr = [5, 10, 3]
-
 
 for i, val in enumerate(arr):
     print(f'i: {i}, val: {val}')
-    binary = binarySearch(arr[i+1:], val)
+    binary = binarySearch(arr[i + 1:], val)
     print(arr)
     print(binary)
     # print(arr)
